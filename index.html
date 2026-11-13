@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - علي</title>
 <style>
-body{padding:40px;text-align:center;font-family:sans-serif;transition:0.3s}
+body{font-family:system-ui;background:#f6f8fa;color:#24292f;margin:0;padding:20px;transition:.3s}
 body.dark{background:#0d1117;color:white}
-#theme-toggle{padding:12px 20px;border-radius:8px;border:1px solid #999;cursor:pointer;font-size:16px}
+.container{max-width:700px;margin:0 auto;text-align:center}
+h1{font-size:36px;margin:20px 0 5px}
+.card{background:white;border:1px solid #ddd;padding:20px;border-radius:16px;margin:15px 0;text-align:right}
+body.dark .card{background:#161b22;border-color:#30363d}
+button{padding:12px 24px;border-radius:20px;border:1px solid #ddd;cursor:pointer}
 </style>
 </head>
 <body>
+<div class="container">
+<h1>أهلاً، أنا علي 👋</h1>
+<p>Frontend Developer | بحب أبني مواقع سريعة</p>
 
-<h1>Welcome 👋</h1>
-<button id="theme-toggle" aria-pressed="false">☾ Toggle dark mode</button>
+<div class="card">
+<h3>💻 عني</h3>
+<p>مطور ويب بتعلم HTML, CSS, JavaScript. هدفي أعمل مواقع احترافية وسريعة.</p>
+</div>
 
-<script>
-const themeButton = document.getElementById("theme-toggle");
-
-themeButton.addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-
-    const darkModeIsOn = document.body.classList.contains("dark");
-    themeButton.setAttribute("aria-pressed", darkModeIsOn);
-    themeButton.textContent = darkModeIsOn ? "☀ Switch to light mode" : "☾ Toggle dark mode";
-});
-</script>
-
-</body>
-</html>
+<div class="card">
+<h3>🚀 مشاريعي</h3>
+<p>🔹 مشروع موقع شخصي<br>
+🔹 مشروع متجر إلكتروني<br>
+🔹 مشروع تطبيق مهام</p>
